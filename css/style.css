@@ -33,8 +33,17 @@ a:hover{
 }
 
 .link-more{
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+    
+}
+
+.link-more:hover .icon {
+    transform: translateX(8px);
 }
 img{
     width: 100%;
@@ -46,11 +55,31 @@ section{
     position: relative;
 }
 
+/* ----------------------Intro---------------------- */
+.intro{
+    margin-bottom:60px;
+}
+
+.intro h1{
+    margin-top:16px;
+    margin-bottom:16px;
+}
+
+.intro h6{
+    color: var(--brand);
+}
+
+.intro p{
+    max-width: 500px;
+}
+/* ----------------------Intro---------------------- */
+
+
 
 /* ----------------------NAVBAR---------------------- */
 .navbar{
 /* border: 2px solid white; */
-font-size: 22px;
+font-size: 20px;
 background: linear-gradient(to bottom,#1B1F34 ,rgba(27 , 31 , 52 , 0.2))  
 }
 
@@ -64,8 +93,9 @@ background: linear-gradient(to bottom,#1B1F34 ,rgba(27 , 31 , 52 , 0.2))
 
 /* ----------------------Hero---------------------- */
 #hero{
-background: linear-gradient(to right,#1B1F34 ,rgba(27 , 31 , 52 , 0.0)) ,url(../img/cover_1.jpg);
+background: linear-gradient(to right,#1B1F34 ,rgba(27 , 31 , 52 , 0.0)) ,url(../img/cover.webp);
 min-height: 100vh;
+display: flex;
 background-position: center;
 background-size: cover;
 }
@@ -84,20 +114,24 @@ font-family: "Dela Gothic One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 transition: all .4s ease;
 border-radius: 0;
 }
+
 .btn-brand{
     background-color: var(--brand);
 }
+
 .btn-brand:hover{
     background-color: transparent;
     color: var(--brand);
     border-color: var(--brand);
 }
+
 .btn-outline-brand{
     background-color: transparent;
     color: var(--brand);
     border-color: var(--brand); 
     
 }
+
 .btn-outline-brand:hover{
     background-color: var(--brand);
 }
@@ -105,6 +139,7 @@ border-radius: 0;
 /* ----------------------/BTN---------------------- */
 
 /* ----------------------About---------------------- */
+
 #about{
 position: relative;
 }
@@ -122,14 +157,32 @@ z-index: -1;
 
 #about h6{
     color: var(--brand);
+    margin-bottom: 16px;
 }
 
 #about h1{
-    margin-top: 16px;
+    /* margin-top: 16px; */
     margin-bottom: 24px;
 }
 
 #about .signature{
     width:unset ;
 }
+
 /* ----------------------/About---------------------- */
+
+
+/* ----------------------Services---------------------- */
+#services{
+    background: var(--bg2);
+}
+
+#services .service .content{
+    padding: 32px;
+}
+
+#services .service p{
+margin-top:18px;
+margin-bottom: 18px;
+}
+/* ----------------------/Services---------------------- */
