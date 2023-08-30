@@ -71,6 +71,11 @@ section{
 
 .intro p{
     max-width: 500px;
+    margin: auto;
+}
+
+.cta-btns{
+    margin-top:60px ;
 }
 /* ----------------------Intro---------------------- */
 
@@ -94,10 +99,11 @@ background: linear-gradient(to bottom,#1B1F34 ,rgba(27 , 31 , 52 , 0.2))
 /* ----------------------Hero---------------------- */
 #hero{
 background: linear-gradient(to right,#1B1F34 ,rgba(27 , 31 , 52 , 0.0)) ,url(../img/cover.webp);
+background-size: cover;
+background-position: center;
 min-height: 100vh;
 display: flex;
-background-position: center;
-background-size: cover;
+text-align: center;
 }
 
 #hero p{
@@ -186,3 +192,17 @@ margin-top:18px;
 margin-bottom: 18px;
 }
 /* ----------------------/Services---------------------- */
+
+
+/* ----------------------mailestone---------------------- */
+#mailestone{
+background: linear-gradient(to right,rgba(27, 31 , 52 , 0.8) ,rgba(27, 31 , 52 , 0.8)) ,url(../img/cover_2.jpg);
+background-size: cover;
+background-position: center;
+}
+
+#mailestone h1{
+color: var(--brand);
+}
+/* ----------------------/mailestone---------------------- */
+
