@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #959DCC;
+    --brand: #FFAB76;
+    --white: #fff;
+}
+
+body{
+    font-family:"Inter",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+#logo{
+    width: 6rem;
+}
+
+h1,h2,h3,h4,h5.h6{
+font-family: "Dela Gothic One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: white;
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+    transition: all .4s ease;
+}
+a:hover{
+    color: var(--brand);
+}
+
+.link-more{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+    
+}
+
+.link-more .bi-arrow-right{
+    transition: all .4s ease;
+}
+.link-more:hover .bi-arrow-right {
+    transform: translateX(8px);
+}
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+}
+
+/* ----------------------Intro---------------------- */
+.intro{
+    margin-bottom:60px;
+}
+
+.intro h1{
+    margin-top:16px;
+    margin-bottom:16px;
+}
+
+.intro h3{
+    color: var(--brand);
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+.cta-btns{
+    margin-top:60px ;
+}
+/* ----------------------Intro---------------------- */
+
+
+
+/* ----------------------NAVBAR---------------------- */
+.navbar{
+/* border: 2px solid white; */
+font-size: 20px;
+background: linear-gradient(to bottom,#1B1F34 ,rgba(27 , 31 , 52 , 0.2))  
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+/* ----------------------/NAVBAR---------------------- */
+
+
+/* ----------------------BTN---------------------- */
+.btn{
+    padding: 16px 36px;
+    font-family: "Dela Gothic One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .4s ease;
+    border-radius: 0;
+    }
+    
+    .btn-brand{
+        background-color: var(--brand);
+    }
+    
+    .btn-brand:hover{
+        background-color: transparent;
+        color: var(--brand);
+        border-color: var(--brand);
+    }
+    
+    .btn-outline-brand{
+        background-color: transparent;
+        color: var(--brand);
+        border-color: var(--brand); 
+        
+    }
+    
+    .btn-outline-brand:hover{
+        background-color: var(--brand);
+    }
+    
+    /* ----------------------/BTN---------------------- */
+
+
+/* ----------------------Social Icons---------------------- */
+
+.social-links a{
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover{
+    background-color: var(--brand);
+    color: var(--bg2);
+}
+
+/* ----------------------/Social Icons---------------------- */
+
+
+
+/* ----------------------Team---------------------- */
+
+.team-member{
+position: relative;
+}
+
+.team-member .social-links{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .social-links{
+    opacity: 1;
+    top: 25px;
+
+}
+
+/* ----------------------/Team---------------------- */

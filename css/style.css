@@ -42,7 +42,10 @@ a:hover{
     
 }
 
-.link-more:hover .icon {
+.link-more .bi-arrow-right{
+    transition: all .4s ease;
+}
+.link-more:hover .bi-arrow-right {
     transform: translateX(8px);
 }
 img{
@@ -65,7 +68,7 @@ section{
     margin-bottom:16px;
 }
 
-.intro h6{
+.intro h3{
     color: var(--brand);
 }
 
@@ -194,15 +197,27 @@ margin-bottom: 18px;
 /* ----------------------/Services---------------------- */
 
 
-/* ----------------------mailestone---------------------- */
-#mailestone{
-background: linear-gradient(to right,rgba(27, 31 , 52 , 0.8) ,rgba(27, 31 , 52 , 0.8)) ,url(../img/cover_2.jpg);
-background-size: cover;
-background-position: center;
+/* ----------------------Features---------------------- */
+
+#features{
+    background-color: var(--bg2);
 }
 
-#mailestone h1{
-color: var(--brand);
+.feature{
+display: flex;
 }
-/* ----------------------/mailestone---------------------- */
+
+.feature .icon-feature{
+    font-size: 36px;
+    color: var(--brand);
+    line-height:1 ;
+    margin-right: 16px;
+}
+
+.feature p{
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom:16px;
+}
+/* ----------------------/Features---------------------- */
 
