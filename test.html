@@ -1,160 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Contact Us</title>
-    <style>
-        /* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-}
-
-/* Contact section styles */
-.contact-section {
-    background-color: #ff5733; /* Your brand color */
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.contact-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.contact-form-container {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.submit-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.submit-button:hover {
-    background-color: #555;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: 0 15px;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-    </style>
+    <title>Date Picker Example</title>
+    <!-- Include Bootstrap CSS if you're using it -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <section class="contact-section">
-        <div class="contact-container">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="section-subtitle">We'd love to hear from you!</p>
-            
-            <div class="contact-form-container">
-                <form id="contactForm">
-                    <div class="input-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="datePicker">Select a Date:</label>
+                <input type="date" id="datePicker" class="form-control" name="selectedDate" placeholder="DD/MM/YYYY">
             </div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
-
-    <script>
-        // JavaScript code for form submission and validation
-document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.getElementById("contactForm");
-
-    contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        // You can add form submission logic here
-        // For example, sending form data to a server using AJAX
-
-        alert("Thank you for your message! We'll get back to you soon.");
-        contactForm.reset();
-    });
-});
-
-    </script>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+    <!-- Include Bootstrap JS and jQuery if you're using Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -516,6 +516,36 @@ footer .social-links a{
     margin-bottom: 10px;
 }
 
+.ic{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.test{
+    border: 2px solid rgb(142, 142, 142);
+    width: 35%;
+    background-image: url(../img/contact\ us.webp);
+    opacity: .8;
+}
+
+.test:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+#contact2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--bg2);
+
+}
+
+iframe{
+    width: 60rem;
+    height: 30rem;
+}
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .contact-info-container {
@@ -541,14 +571,10 @@ footer .social-links a{
 
     .contact-info-container{
         width: 100%;
+        
     }
 }
 
-.map {
-    max-width: 100%;
-    height: 450px;
-    margin-bottom: 20px;
-}
 
 
 
