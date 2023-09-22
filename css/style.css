@@ -225,6 +225,15 @@ display: flex;
     margin-top: 16px;
     margin-bottom:16px;
 }
+
+.hidden-content {
+    display: none;
+  }
+  
+  .hidden-content.show {
+    display: block;
+  }
+  
 /* ----------------------/Features---------------------- */
 
 
@@ -403,4 +412,147 @@ footer .social-links a{
     padding-bottom: 30px;
     border-top: 1px solid var(--bg2);
 }
+
+/* ----------------------------------------------  /Footer  ---------------------------------------------- */
+
+
+
+/* ----------------------------------------------  CONTACT US PAGE ---------------------------------------------- */
+
+/* Dark style for the contact form */
+.contact-form-container {
+    background-color: var(--bg1);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--bg2); /* Your brand color for the border */
+    background-color: transparent;
+    color: var(--body);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color:var(--body); /* Your brand color for the focus effect */
+}
+
+.submit-button {
+    background-color: var(--brand);
+    color: #000000;
+    font-family: "Dela Gothic One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    /* font-size: 1rem; */
+    cursor: pointer;
+    transition: all .4s ease;
+
+}
+
+.submit-button:hover {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.submit-outline-brand{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);    
+}
+
+.submit-outline-brand:hover{
+    background-color: var(--brand);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .contact-form-container {
+        padding: 10px;
+    }
+
+    
+    .form-input,
+    .form-textarea {
+        font-size: 0.9rem;
+    }
+}
+
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* -----------Contact Info ----------- */
+
+/* Style for the contact information */
+.contact-info-container {
+    color: var(--body);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--brand);
+    width: 30%;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .contact-info-container {
+        padding: 10px;
+    }
+
+    .info-title {
+        font-size: 1.2rem;
+    }
+
+    .info-item {
+        font-size: 0.9rem;
+    }
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-container{
+        width: 100%;
+    }
+
+    .contact-info-container{
+        width: 100%;
+    }
+}
+
+.map {
+    max-width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+
+
+/* ----------------------------------------------  /CONTACT US PAGE ---------------------------------------------- */
+
+
 
