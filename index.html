@@ -47,8 +47,8 @@
           </li>
 
         </ul>
-        <a href="" class="btn btn-outline-brand ms-lg-4">Log in</a>
-        <a href="" class="btn btn-outline-brand ms-lg-4">Sign up</a>
+        <a href="./login.html" class="btn btn-outline-brand ms-lg-4">Log in</a>
+        <a href="./signup.html" class="btn btn-outline-brand ms-lg-4">Sign up</a>
       </div>
     </div>
   </nav>
@@ -114,10 +114,12 @@
             <img src="./img/service_1.jpg" alt="">
             <div class="content">
 
-              <h3 class="h5">Service Title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet debitis aliquam necessitatibus
-              </p>
+              <h3 class="h5">Haircuts</h3>
+              <p>Our expert stylists can give you the perfect haircut to suit your style.</p>
               <a href="#" class="link-more">Know More <i class="bi bi-arrow-right"></i> </a>
+              <div class="hidden-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque vel, voluptate illo sapiente expedita ipsam ut repellat quod animi, optio enim ullam tenetur corrupti aliquam maiores earum tempore magnam!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -128,10 +130,12 @@
             <img src="./img/service_2.jpg" alt="">
             <div class="content">
 
-              <h3 class="h5">Service Title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet debitis aliquam necessitatibus
-              </p>
+              <h3 class="h5">Shaves</h3>
+              <p> Experience a traditional hot towel shave for a smooth and refreshing shave.</p>
               <a href="#" class="link-more">Know More <i class="bi bi-arrow-right"></i> </a>
+              <div class="hidden-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque vel, voluptate illo sapiente expedita ipsam ut repellat quod animi, optio enim ullam tenetur corrupti aliquam maiores earum tempore magnam!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -142,10 +146,13 @@
             <img src="./img/service_3.jpg" alt="">
             <div class="content">
 
-              <h3 class="h5">Service Title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet debitis aliquam necessitatibus
+              <h3 class="h5">Hairstyling</h3>
+              <p>Get the perfect hairstyle for any occasion, from elegant updos to casual beachy waves.
               </p>
               <a href="#" class="link-more">Know More <i class="bi bi-arrow-right"></i> </a>
+              <div class="hidden-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque vel, voluptate illo sapiente expedita ipsam ut repellat quod animi, optio enim ullam tenetur corrupti aliquam maiores earum tempore magnam!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -153,6 +160,7 @@
       <div class="cta-btns">
         <a href="#booking" class="btn btn-brand me-sm-2">Appointment</a>
         <a href="./contact us.html" class="btn btn-outline-brand ms-sm-2">Get In Touch</a>
+
       </div>
     </div>
   </section>
@@ -430,9 +438,25 @@
               <input type="text" class="form-control" placeholder="Email Address">
             </div>
             <div class="form-froup col-12">
+              <input type="text" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="form-froup col-12">
               <!-- <input type="datetime" class="form-control" placeholder="DD/MM/YYY"> -->
               <input type="date" id="datePicker" class="form-control" placeholder="DD/MM/YYY">
             </div>
+            <div class="form-group col-6">
+              <input type="time" id="appointmentTime" class="form-control" placeholder="Time">
+            </div>
+            <div class="form-group col-12">
+              <select id="barberSelect" class="form-control" placeholder="Select Barber">
+                <option value="" disabled selected>Select Barber</option>
+                <option value="barber1">Barber 1</option>
+                <option value="barber2">Barber 2</option>
+                <option value="barber3">Barber 3</option>
+                <!-- Add more barber options as needed -->
+              </select>
+            </div>
+            
             <div class="form-froup col-12">
               <TExtarea name="" class="form-control" id="" cols="30" rows="5" placeholder="Message"></textarea>
             </div>
